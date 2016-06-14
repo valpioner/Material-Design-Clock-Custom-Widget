@@ -1,0 +1,12 @@
+﻿<div class="header">
+    {{header}}
+</div>
+
+<div class="content">
+    <div ng-repeat="timeBox in timeBoxes track by $index">
+        <div class="select" ng-click="open($index)">
+            <span class="time-value ">{{timeBox.display}}</span>
+            <span class="arrow-down"></span>
+        </div>
+    </div>
+</div>
